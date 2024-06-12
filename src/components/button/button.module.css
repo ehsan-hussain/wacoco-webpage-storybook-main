@@ -1,0 +1,20 @@
+button {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: white;
+}
+.btn-primary {
+    background-color: #FF4662;
+  }
+  .btn-active {
+    background-color: #3850CC;
+  }
+  .btm-hover  {
+    background-color: #FF5D75;
+  }

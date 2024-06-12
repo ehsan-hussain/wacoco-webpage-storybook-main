@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  
+}
+
+/* src/styles.css */
+
+:root {
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+}
+
+@media (min-width: 576px) {
+  /* Small devices (landscape phones, 576px and up) */
+  :root {
+    --font-size-md: 18px;
+    --space-md: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Medium devices (tablets, 768px and up) */
+  :root {
+    --font-size-lg: 20px;
+    --space-lg: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Large devices (desktops, 992px and up) */
+  :root {
+    --font-size-xl: 24px;
+    --space-xl: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Extra large devices (large desktops, 1200px and up) */
+  :root {
+    --font-size-xl: 28px;
+    --space-xl: 48px;
+  }
+}

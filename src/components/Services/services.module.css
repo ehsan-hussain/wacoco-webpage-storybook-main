@@ -1,0 +1,153 @@
+ .Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #f3f2f9;
+    padding: 280px 7.5% 280px 7.5%;
+    
+    
+}
+   
+.Header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+   
+.Title {
+    font-size:   70px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-right: 14%;
+}
+   
+.Description {
+    font-size:   22px;
+    font-weight: 400;
+    font-family: 'Helvetica', sans-serif;
+}
+   
+.ServicesList {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+    width:   100%;
+    margin: 0 7.5%;
+    top: 110px;
+}
+   
+.ServiceWrapper {
+    position: relative;
+    margin:   10px;
+    transition: transform 0.3s ease-in-out; 
+    
+}/*Adds a transition for the movement*/
+
+.ServiceWrapper:hover .ServiceImage {
+    transform: scale(1.0) translateY(-50px);/*Makes the image move up*/
+    opacity:   0; /* Reduce the image's opacity to make it look like a background */
+   /*  transform: translateY(-50px);  */
+   transition: transform 1.5s ease-in-out;
+}
+
+.ServiceWrapper:hover .ServiceImage,
+.ServiceWrapper:hover .ServiceOverlay {
+    transform: translateY(-80px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.ServiceWrapper:hover::before {
+    content: "";
+    position: absolute;
+    top:   0;
+    left:   0;
+    width:   100%;
+    height:   100%;
+    /* background-color: blue; */ /* Change the background color to your preference */
+   /*  z-index: -1; */ /* Ensure the pseudo-element is behind the image */
+}
+
+.ServiceImage {
+    width:   100%;
+    height: auto;
+    transition: opacity   0.3s ease-in-out, transform   0.3s ease-in-out;
+    position: relative;
+}
+   
+.ServiceTitle {
+    position: absolute;
+    top:   50%;
+    left:   50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size:   1.5em;
+    opacity:   0;
+    transition: opacity   0.3s ease-in-out;
+}
+   
+.ServiceWrapper:hover .ServiceTitle {
+    opacity:   1;
+}
+
+.ButtonHover1{
+    background-color:#3850CC;
+}
+
+.ServiceOverlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:   0%;
+    left:   0;
+    width:   100%;
+    height:   100%;
+    padding: 23% 7%;
+    background-image: linear-gradient(180deg, #000639 0%, #252E84 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity:   0;
+    transition: opacity   0.3s ease-in-out;
+}
+
+.ServiceWrapper:hover .ServiceOverlay{
+    opacity:  1;
+}
+
+.OverlayTitle{
+    color:#fff;
+    font-size:  32px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom:  10px;
+}
+
+.OverlayText {
+    font-size:  22px;
+    font-family: 'Helvetica', sans-serif;
+    margin-bottom:  10px;
+    color: #979CC9 ;
+}
+
+.OverlayButton {
+    background-color: #3850CC;
+    
+    padding:  10px  20px;
+    border:none;
+    cursor: pointer;
+    position: absolute;
+    bottom: -70px;
+    left:  50%;
+    transform: translate(-50%);
+}
+

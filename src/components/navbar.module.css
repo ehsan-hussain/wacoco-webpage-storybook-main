@@ -1,0 +1,37 @@
+.wrapper {
+   background-color: beige; 
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+   position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 90%;
+    padding: 15px 30px;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wacocoLogo {
+  display: flex;
+    height: 100px;
+    width: auto;
+    padding-top: 10px;
+  } 
+
+.navLinks {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    margin-left: auto;
+    list-style: none;
+}
+ul li {
+  
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  }
+  
+  
